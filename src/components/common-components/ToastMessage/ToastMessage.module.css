@@ -1,0 +1,14 @@
+.toastMessage_card {
+  border-radius: 5px;
+  padding: 0.25rem 1.55rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-black);
+  font-size: 0.85rem;
+  font-weight: 550;
+}
+.toastMessage_icon {
+    width: 1.2rem;
+    height: 1.2rem;
+}

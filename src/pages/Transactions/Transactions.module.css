@@ -1,0 +1,101 @@
+.transactions_main {
+  background: var(--background-white);
+  width: calc(100vw - 13.1rem);
+  height: calc(100vh - 3.8rem);
+  padding: 3.5rem 0.8rem 1.2rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.transactions_selector_section {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.transactions_sortBy_text {
+  color: var(--body-grey);
+  font-size: 0.82rem;
+  font-weight: 400;
+}
+.transactions_exportTosheet_btn {
+  margin-left: auto;
+}
+
+.table_wrapper {
+  margin-top: 0.5rem;
+  max-height: 100%;
+  overflow: auto;
+}
+.table_wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+.table_wrapper::-webkit-scrollbar-track {
+  background: rgb(217, 215, 215);
+}
+
+.table_wrapper::-webkit-scrollbar-thumb {
+  background: var(--secondary-green);
+  border-radius: 5px;
+}
+
+.transactions_table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  overflow: auto;
+}
+.transactions_table_head {
+  position: sticky;
+  top: 0;
+  padding: 0.7rem;
+  background: var(--primary-white);
+}
+.transactions_table_head,
+.transactions_table_data {
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+.transactions_table_data {
+  padding: 1.2rem 0 1.2rem 0.7rem;
+  border-bottom: 1.5px solid #d7d5d3;
+  max-height: 40%;
+}
+.transactions_table_data:nth-child(1) {
+  color: var(--primary-black);
+}
+.transactions_table_data:nth-child(2),
+.transactions_table_data:nth-child(3),
+.transactions_table_data:nth-child(4) {
+  color: var(--body-grey);
+}
+.transactions_table_data:nth-child(4) {
+  text-transform: capitalize;
+}
+.transactions_table_data:nth-child(5) {
+  color: var(--primary-black);
+}
+.transactions_name_data {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-transform: capitalize;
+}
+.transactions_amount_data {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.amountText {
+  background: #aceeaf;
+  padding: 2px 3px;
+}
+.isFailed {
+  background: #eeacac;
+  padding: 2px 3px;
+}
+.failedText {
+  padding: 2.5px 3px;
+  background: #eee3ac;
+}

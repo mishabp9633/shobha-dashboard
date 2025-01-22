@@ -1,0 +1,85 @@
+.filterByDate_main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  z-index: 1;
+}
+.filterByDate_card {
+  width: 17.5rem;
+  border-radius: 8px;
+  background: var(--primary-white);
+  box-shadow: -1px 2px 20px 0px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+.filterByDate_heading {
+  color: var(--secondary-green);
+  font-size: 1rem;
+  font-weight: 450;
+}
+.filterByDate_labelText {
+  margin: 1.8rem 0 0.2rem 0;
+  color: var(--body-grey);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.filterByDate_date_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+}
+.filterByDate_input {
+  text-align: center;
+  width: 100%;
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1.5px solid var(--secondary-green);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--primary-black);
+}
+.year_input {
+  flex: 1.5;
+}
+.filterByDate_input::placeholder {
+  color: var(--body-grey);
+}
+
+.filterByDate_input::-webkit-outer-spin-button,
+.filterByDate_input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+/* Firefox */
+.filterByDate_input {
+  -moz-appearance: textfield;
+}
+
+.apply_btn {
+    margin: 3rem 0 0 auto;
+  border-radius: 5px;
+  background: var(--secondary-green);
+  color: var(--background-white);
+  padding: 0.3rem 1.25rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.filterByDate_closer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}

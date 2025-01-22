@@ -1,0 +1,65 @@
+.sidebar_section {
+  border-top: 1px solid #e9ecef;
+  height: calc(100vh - 3.8rem);
+  width: 13.1rem;
+  padding: 0 0.6rem;
+  background: var(--primary-white);
+  box-shadow: 0px 10px 30px 0px rgba(17, 38, 146, 0.05);
+}
+.home h3 {
+  margin: 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 550;
+  color: #adb5bd;
+}
+.homesub,
+.borderline {
+  border-bottom: 1px solid #e9ecef;
+  margin: 0 0.6rem;
+}
+.sidebar_section a {
+  text-decoration: none;
+  color: inherit;
+}
+.category {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.4rem 0.2rem;
+  padding: 0.5rem 0 0.5rem 1rem;
+  border-radius: 10px;
+}
+.category h4 {
+  color: #8a92a6;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.icons {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.category:hover {
+  background: var(--secondary-green);
+}
+.category:hover h4 {
+  color: var(--background-white);
+}
+.logout {
+  margin-top: 0.8rem;
+  padding-left: 0.4rem;
+  cursor: pointer;
+}
+
+.category:hover .icons path {
+  fill: var(--background-white);
+}
+
+.active .category {
+  background: var(--secondary-green);
+}
+.active .category h4 {
+  color: var(--background-white);
+}
+.active .category .icons path {
+  fill: var(--background-white);
+}

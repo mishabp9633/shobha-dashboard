@@ -1,0 +1,57 @@
+.customer_container {
+  height: 100%;
+  width: 60%;
+  background: var(--primary-white);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.customer_title {
+  color: var(--secondary-black);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1.25rem 2.65rem;
+}
+.custdetails {
+  padding: 1.2rem 1.65rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.vertical_line {
+  width: 0.0625rem;
+  height: 2.3rem;
+  background: #8a92a6;
+}
+.payment p {
+  color: var(--body-grey);
+  font-size: 0.675rem;
+  font-weight: 400;
+}
+.payment h5 {
+  color: var(--secondary-green);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.button_section {
+  display: flex;
+  gap: 1rem;
+}
+.viewMore_text {
+  margin: auto 1.5rem 1.5rem auto;
+  color: var(--secondary-grey);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.noJoinRequest_txt_container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 0.85rem;
+  color: var(--body-grey);
+}

@@ -1,0 +1,71 @@
+.confirmationModal_main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  z-index: 1;
+}
+.confirmationModal_card {
+  max-width: 21rem;
+  border-radius: 10px;
+  background: var(--background-white);
+  box-shadow: -1px 2px 20px 0px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+.confirmationModal_heading {
+  color:var(--secondary-green);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.confirmationModal_paragraph {
+  margin-top: 0.5rem;
+  color: var(--body-grey);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+.confirmationModal_warningText {
+  margin-top: 0.2rem;
+   color: #ec5252;
+  color:var(--secondary-green);
+  font-size: 0.76rem;
+  font-weight: 400;
+}
+.confirmationModal_button_container {
+  margin-top: 1.8rem;
+  margin-left: auto;
+  display: flex;
+  gap: 0.85rem;
+}
+.confirmationModal_cancelBtn {
+  color: var(--secondary-green);
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 3px;
+  padding: 0.2rem 0.8rem;
+  border: 2px solid var(--secondary-green);
+  cursor: pointer;
+}
+.confirmationModal_acceptBtn {
+  color: var(--background-white);
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 3px;
+  background: var(--secondary-green);
+  padding: 0.4rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+.confirmationModal_closer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}

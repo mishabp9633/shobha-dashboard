@@ -1,0 +1,209 @@
+.single_user_container {
+  height: 100%;
+  width: 100%;
+  background: #eceeee;
+  padding: 3.8rem 2.5rem;
+  overflow: auto;
+}
+
+.header {
+  position: relative;
+  
+  width: 36.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1.31rem;
+}
+.profile h4 {
+  color: var(--primary-black);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  text-transform: capitalize;
+}
+.profile p {
+  color: var(--body-grey);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.button_section {
+  /* position: relative; */
+  display: flex;
+  gap: 0.5rem;
+}
+.button {
+  display: flex;
+  border-radius: 0.3125rem;
+  background: var(--orange, #ec9252);
+  gap: 0.3rem;
+  padding: 0.525rem 1.9rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: var(--background-white);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.button_edit_icon {
+  width: 1rem;
+  height: 1rem;
+}
+.button_dots_icon {
+  background: #d0d3db;
+  border-radius: 0.3rem;
+  cursor: pointer;
+
+}
+.single_user_balance_contaioner {
+  width: 36.5%;
+  background: var(--primary-white);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: -1px 2px 8px 0px rgba(0, 0, 0, 0.06);
+  margin-bottom: 0.75rem;
+}
+.single_user_balance_title {
+  color: var(--body-grey);
+  font-size: .9rem;
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+}
+.single_user_balance_amount {
+  color: var(--primary-black);
+  font-size: 1.7rem;
+  font-weight: 550;
+}
+.single_user_details_contaioner{
+  width: 36.5%;
+  background: var(--primary-white);
+  padding: 1rem 2rem ;
+  border-radius: 0.25rem;
+  box-shadow: -1px 2px 8px 0px rgba(0, 0, 0, 0.06);
+}
+.single_user_details_right_section{
+  font-size: .8rem;
+  font-weight: 500;
+  color: var(--primary-black);
+  padding: 1rem 0;
+  text-transform: capitalize;
+}
+.single_user_details_left_section{
+  font-size: .8rem;
+  font-weight: 400;
+  color: var(--body-grey);
+}
+.single_user_image_section_title {
+  color: var(--primary-black);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 1.25rem 0;
+}
+.single_user_image_section_images {
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.single_user_action_container {
+  display: flex;
+  align-items: center;
+  margin-top: 2.5rem;
+  gap: 1.3rem;
+  justify-content: space-between;
+}
+.single_user_action_first {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+.single_user_action_table_title{
+  color: var(--primary-black);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 1.25rem 0; 
+}
+.single_user_action_table_sort {
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+}
+.single_user_action_table_sortBy_text {
+  color: var(--body-grey);
+  font-size: 0.82rem;
+  font-weight: 400;
+}
+.singl_user_updated_action {
+  display: flex;
+  gap: 1rem;
+}
+
+.single_user_table_wrapper {
+  margin-top: 0.5rem;
+  max-height: 100%;
+  overflow: auto;
+}
+.single_user_table_wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+.single_user_table_wrapper::-webkit-scrollbar-track {
+  background: rgb(217, 215, 215);
+}
+
+.single_user_table_wrapper::-webkit-scrollbar-thumb {
+  background: var(--secondary-green);
+  border-radius: 5px;
+}
+
+.single_user_table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  overflow: auto;
+}
+.single_user_table_head {
+  position: sticky;
+  top: 0;
+  padding: 0.7rem;
+  background: var(--primary-white);
+  font-size: 0.85rem;
+  font-weight: 400;
+  width: 25%;
+}
+.single_user_table_data{
+  font-size: .85rem;
+  font-weight: 400;
+  width: 25%;
+  padding: .7rem;
+}
+
+.noImages_text {
+  color: var(--body-grey);
+  font-size: 0.85rem;
+}
+
+.transactions_amount_data {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.amountText {
+  background: #aceeaf;
+  padding: 2px 3px;
+}
+.isFailed {
+  background: #eeacac;
+  padding: 2px 3px;
+}
+.failedText {
+  padding: 2.5px 3px;
+  background: #eee3ac;
+}

@@ -1,0 +1,85 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1.85rem;
+  background: var(--primary-white);
+  box-shadow: 0px 10px 30px 0px rgba(17, 38, 146, 0.05);
+}
+.container {
+  display: flex;
+  gap: 4.5rem;
+}
+.logo {
+  width: 9.2rem;
+  height: 2rem;
+}
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search_icon {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  left: 1.3rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.search input {
+  width: 15.5rem;
+  height: 1.85rem;
+  padding-left: 2.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+  font-size: 0.85rem;
+  color: var(--primary-black);
+}
+.search input::placeholder {
+  color: #adb5bd;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+.account {
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+}
+.notification_container {
+  position: relative;
+}
+.notification_icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #8a92a6;
+}
+.notification_reminder {
+  position: absolute;
+  top: 0;
+  right: 1px;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: #ec5252;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.name p {
+  margin: 0;
+  padding-right: 1rem;
+  color: #232d42;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.name span {
+  color: #8a92a6;
+  font-size: 0.65rem;
+  font-weight: 400;
+}

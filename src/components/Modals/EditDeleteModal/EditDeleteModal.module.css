@@ -1,0 +1,43 @@
+.addEditModal_card {
+  position: absolute;
+  top: 3.5rem;
+  right: -7rem;
+  right: 0;
+  border-radius: 7px;
+  padding: 0.8rem;
+  background: var(--primary-white);
+  box-shadow: -1px 2px 7px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 2;
+}
+.addEditModal_row {
+  display: flex;
+  align-items: center;
+  padding: 0.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.addEditModal_row:hover {
+  background: rgb(241, 239, 239);
+}
+.addEditModal_icon {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.addEditModal_text {
+  margin-left: 0.3rem;
+  color: var(--primary-black);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.addEditModal_closer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}

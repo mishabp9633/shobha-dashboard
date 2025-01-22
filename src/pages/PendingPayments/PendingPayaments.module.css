@@ -1,0 +1,227 @@
+.pendingPayments_main {
+  background: var(--background-white);
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem 2.6rem 0.8rem 0.8rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.pendingPayments_first_section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.pendingPayments_search_section {
+  margin-top: 1.5rem;
+}
+.pendingPayments_card_section {
+  margin-top: 0.6rem;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-white);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  overflow: auto;
+}
+.pendingPayments_card_section::-webkit-scrollbar {
+  width: 4px;
+}
+.pendingPayments_card_section::-webkit-scrollbar-track {
+  background: rgba(128, 128, 128, 0.182);
+}
+.pendingPayments_card_section::-webkit-scrollbar-thumb {
+  background: var(--secondary-green);
+  border-radius: 5px;
+}
+.pendingPayments_card_section::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.pendingPayments_card {
+  display: flex;
+  padding: 1rem 1.5rem;
+  position: relative;
+  flex-direction: column;
+  cursor: pointer;
+}
+.pendingPayments_card:hover {
+  background: #e1fff6;
+}
+.activeCard {
+  background: #e1fff6;
+}
+.pendingPayments_count {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  right: 0;
+  min-width: 1.8rem;
+  height: 1.8rem;
+  background: var(--secondary-green);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-white);
+  font-size: 0.675rem;
+  font-weight: 400;
+  padding: 0.3rem;
+}
+
+.pendingPayments_second_section {
+  width: 100%;
+  height: 100%;
+  background: var(--primary-white);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.pendingPayments_blankMessage_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.pendingPayments_blankMessage_image {
+  width: 4rem;
+  height: 4rem;
+}
+.pendingPayments_blankMessage_para {
+  color: var(--body-grey);
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.pendingPayments_totalAmountContainer {
+  width: 100%;
+  border-radius: 0.375rem;
+  background: #f0f0f0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  position: relative;
+}
+.pendingPayments_totalAmount_text {
+  color: var(--body-grey);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+.pendingPayments_totalAmount {
+  color: var(--primary-black);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.acceptAll_btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  border-radius: 5px;
+  background: var(--secondary-green);
+  padding: 0.4rem 1.4rem;
+  color: var(--background-white);
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.pendingPayments_pendingCard_container {
+  margin-top: 2.5rem;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+  overflow: auto;
+}
+.pendingPayments_pendingCard_container::-webkit-scrollbar {
+  width: 4px;
+}
+.pendingPayments_pendingCard_container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.pendingPayments_pendingCard_container::-webkit-scrollbar-thumb {
+  background: var(--secondary-green);
+  border-radius: 5px;
+}
+
+.pendingPayments_pendingCard {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pendingPayments_pendingCard_firstSection {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: 18rem;
+  overflow: auto;
+}
+.pendingPayments_pendingCard_text_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.pendingPayments_pendingCard_nameText {
+  color: var(--primary-black);
+  font-size: 0.9rem;
+  font-weight: 550;
+  text-transform: capitalize;
+}
+.pendingPayments_pendingCard_timeText {
+  color: var(--body-grey);
+  font-size: 0.82rem;
+  font-weight: 400;
+}
+
+.pendingPayments_pendingCard_secondSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  justify-content: flex-start;
+  padding: 0 6rem;
+  border-right: 1.5px solid var(--secondary-grey);
+  border-left: 1.5px solid var(--secondary-grey);
+}
+.pendingPayments_pendingCard_amount_text {
+  color: var(--body-grey);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+.pendingPayments_pendingCard_amount {
+  color: var(--secondary-green);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.pendingPayments_pendingCard_thirdSection {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.noPendingPayment_container {
+  width: 70%;
+  height: 90%;
+  display: grid;
+  place-items: center;
+}
+.noPendingPayment_text {
+  font-size: 1rem;
+  color: var(--body-grey);
+  font-weight: 500;
+}

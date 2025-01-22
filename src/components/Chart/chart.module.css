@@ -1,0 +1,29 @@
+.map_container {
+  width: 75%;
+  height: 100%;
+  background: var(--primary-white);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+.chart_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.chart_content .month {
+  text-align: end;
+}
+.amount {
+  color: var(--secondary-black);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.category {
+  color: var(--secondary-grey);
+  font-size: .8rem;
+  font-weight: 400;
+}
+.chart_data{
+  padding: .5rem .5rem;
+  width: 100%;
+}

@@ -1,0 +1,102 @@
+.select_box {
+  position: relative;
+  width: auto;
+}
+.selected {
+  border-radius: 5px;
+  border: 2px solid var(--secondary-green);
+  color: var(--secondary-green);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.25rem 1.5rem 0.25rem 0.5rem;
+  cursor: pointer;
+  background: url("../../../assets/dropdown_arrow.svg") no-repeat;
+  background-position: right;
+  background-size: 1.25rem;
+}
+.option_container {
+  position: absolute;
+  left: 0;
+  border-radius: 7px;
+  background: var(--primary-white);
+  padding: 0.8rem 0.5rem;
+  box-shadow: -1px 2px 7px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+.option_container .option {
+  color: var(--primary-black);
+  font-size: 0.85rem;
+  font-weight: 400;
+  padding: 0.5rem 2rem 0.5rem 0.3rem;
+  transition: all 0.4s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.option_container .option:hover {
+  background: rgb(231, 230, 230);
+}
+.option_container label {
+  white-space: nowrap;
+}
+
+.highLightText {
+  color: var(--primary-black);
+  font-size: 0.85rem;
+  font-weight: 400;
+  padding: 0.5rem 2rem 0.5rem 0.3rem;
+  transition: all 0.4s;
+  border-radius: 5px;
+  background: #c7ffee;
+}
+
+.search_container {
+  position: relative;
+  margin-bottom: 0.8rem;
+}
+.search_icon {
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  transform: translateY(-50%);
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.search_inputField {
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  outline: none;
+  color: var(--primary-black);
+}
+
+.search_inputField::placeholder {
+  color: #adb5bd;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.viewMore_text {
+  margin-top: 0.8rem;
+  color: #2a99ff;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.clearAll_btn {
+  margin-top: 1rem;
+  width: 100%;
+  background: transparent;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5rem 0;
+  color: var(--secondary-green);
+  font-size: 0.85rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+.clearAll_btn:hover {
+  background: rgb(248, 245, 245);
+}

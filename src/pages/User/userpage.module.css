@@ -1,0 +1,114 @@
+.user_container {
+  background: var(--background-white);
+  width: calc(100vw - 13.1rem);
+  height: calc(100vh - 3.8rem);
+  padding: 3.5rem 2.6rem 0.5rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+.user_action_container {
+  display: flex;
+  align-items: center;
+  margin-top: 1.9rem;
+  gap: 1.3rem;
+  justify-content: space-between;
+}
+.user_action_first {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.user_sort {
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+}
+.user_sortBy_text {
+  color: var(--body-grey);
+  font-size: 0.82rem;
+  font-weight: 400;
+}
+.updated_action {
+  display: flex;
+  gap: 1.5rem;
+}
+.table_wrapper {
+  margin-top: 0.5rem;
+  max-height: 100%;
+  overflow: auto;
+}
+.table_wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+.table_wrapper::-webkit-scrollbar-track {
+  background: rgb(217, 215, 215);
+}
+
+.table_wrapper::-webkit-scrollbar-thumb {
+  background: var(--secondary-green);
+  border-radius: 5px;
+}
+
+.users_table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  overflow: auto;
+}
+.users_table_head {
+  position: sticky;
+  top: 0;
+  padding: 0.7rem;
+  background: var(--primary-white);
+}
+.users_table_head {
+  font-size: 0.85rem;
+  font-weight: 400;
+  width: 25%;
+}
+.userPage_table_data {
+  font-size: 0.5rem;
+  font-weight: 350;
+  width: 25%;
+  text-transform: capitalize;
+}
+.user_details {
+  display: flex;
+  gap: 0.51rem;
+  align-items: center;
+}
+.user_address {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.user_address h5 {
+  color: var(--primary-black);
+  font-size: 1rem;
+  font-weight: 550;
+  text-transform: capitalize;
+}
+.user_address p {
+  color: var(--body-grey);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.users_amount_data {
+  padding-left: 3rem;
+}
+.amountText {
+  background: #aceeda;
+  color: var(--secondary-green);
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 2px 4px;
+}
+.userPage_table_data {
+  border-bottom: 2px solid #d7d5d3;
+  padding: 1.4rem 0;
+  text-align: left;
+  color: var(--body-grey);
+  font-size: 0.8rem;
+  font-weight: 400;
+}

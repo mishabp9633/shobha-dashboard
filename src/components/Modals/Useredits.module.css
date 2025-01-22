@@ -1,0 +1,305 @@
+.userEditModal_main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  z-index: 1;
+}
+.userEditModal_card {
+  border-radius: 10px;
+  background: var(--background-white);
+  box-shadow: -1px 2px 20px 0px rgba(0, 0, 0, 0.15);
+  padding: 1.8rem 2.5rem;
+  z-index: 2;
+  width: 38rem;
+}
+.userEditModal_heading_section {
+  display: flex;
+  align-items: center;
+}
+.userEditModal_heading {
+  color: var(--secondary-green);
+  font-size: 1rem;
+  font-weight: 550;
+  padding: 0.4rem 0.1rem;
+  cursor: pointer;
+  align-items: center;
+  flex: 1;
+}
+
+.userEditModal_form {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.userEditModal_upper_section {
+  display: flex;
+  gap: 3rem;
+}
+.userEditModal_firstSection {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.userEditModal_label {
+  margin: 1rem 0 0.15rem 0;
+  color: var(--secondary-green);
+  font-size: 0.8rem;
+  font-weight: 550;
+}
+.userEditModal_label_edit{
+  margin: 0 0 0.15rem 0;
+  color: var(--body-grey);
+  font-size: 0.8rem;
+  font-weight: 550;
+}
+.userEditModal_inputField {
+  width: 15.5rem;
+  background: transparent;
+  border-radius: 0.3125rem;
+  border: 1px solid var(--secondary-green);
+  color: var(--primary-black);
+  font-size: 0.85rem;
+  font-weight: 400;
+  outline: none;
+  padding: 0.7rem;
+}
+
+
+
+
+.addProductModal_image_container {
+  margin-top: 0.3rem;
+
+  background: #ddeae3;
+  width: 15.5rem;
+  border: dashed 1px var(--secondary-green);
+  border-radius: 0.25rem;
+  padding: 0.8rem;
+  position: relative;
+}
+
+.addProductModal_file_selector {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  /* display: none; */
+  cursor: pointer;
+}
+.addProductModal_image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.addProductModal_img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.addProductModal_imgdesc {
+  color: var(--body-grey);
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.addProductModal_imgdesc span {
+  color: var(--secondary-green);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration-line: underline;
+  text-underline-offset: 3px;
+}
+.addProductModal_imgcount {
+  color: #6066ff;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+.addProductModal_imageName_container {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 0.35rem;
+}
+
+.addProductModal_imageName {
+  width: fit-content;
+  padding: 0.25rem 0.5rem;
+  color: var(--primary-black);
+  font-size: 0.8rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bluish-green);
+  border-radius: 0.25rem;
+}
+.delete_icon {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.date_of_birth_container {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap:.8rem;
+}
+.birth_data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pincode {
+  display: flex;
+  flex-direction: column;
+}
+.decreasedWidth {
+  width: 4rem;
+  text-align: center;
+}
+.pincodewidth{
+  width: 6rem;
+  text-align: center;
+}
+.adarcardwidth{
+  width: 10rem;
+  text-align: center;
+}
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 2rem;
+  height: 1rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  left: 0;
+  top: 0;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(1rem);
+  -ms-transform: translateX(1rem);
+  transform: translateX(1rem);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 2rem;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.bottom_section {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom_section_editpart {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom_section_agent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+.actions_cancel {
+  border: none;
+  color: var(--Body-Grey, #696a78);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.actions_save {
+  padding: 0.625rem 1.875rem;
+  justify-content: center;
+  border-radius: 0.3125rem;
+  background: var(--Secondary-Green, #32725e);
+  color: var(--Background-White, #eceeee);
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+}
+.blur {
+  filter: blur(1px); /* Adjust the blur radius as needed */
+}
+.addEditModal_closer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.toast_messager{
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}

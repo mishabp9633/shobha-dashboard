@@ -1,0 +1,58 @@
+.customer_container {
+  width: 40%;
+  height: 100%;
+  background: var(--primary-white);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 2rem;
+}
+.customer_title {
+  color: var(--secondary-black);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.custdetails {
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #cdcdcd;
+}
+.custdetails:nth-child(6) {
+  border: none;
+}
+
+.amount_section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.amount {
+  color: var(--secondary-green);
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: #aceeaf;
+  padding: 2px 3px;
+}
+.isFailed {
+  background: #eeacac;
+  padding: 2px 3px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary-black);
+}
+.failedText {
+  padding: 2.5px 3px;
+  font-size: 0.9rem;
+  background: #eee3ac;
+}
+
+.viewMore_text {
+  margin: auto 0 0 auto;
+  color: var(--secondary-grey);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+}

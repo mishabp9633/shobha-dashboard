@@ -1,0 +1,30 @@
+.search_form {
+  width: 23rem;
+  background: var(--primary-white);
+  position: relative;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+.search_input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.65rem 1rem 0.65rem 2.2rem;
+  color: var(--primary-black);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.search_input::placeholder {
+  color: #adb5bd;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.search_icon {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  left: 1.2rem;
+  width: 1.3rem;
+  height: 1.3rem;
+}

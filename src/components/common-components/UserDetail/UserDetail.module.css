@@ -1,0 +1,22 @@
+.userDetail_main {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+.userDetail_text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+  .userDetail_agentName {
+    color: var(--primary-black);
+    font-size: 0.9rem;
+    font-weight: 550;
+    text-transform: capitalize;
+  }
+  .userDetail_agentNumber {
+    color: var(--body-grey);
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
