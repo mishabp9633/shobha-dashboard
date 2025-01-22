@@ -1,7 +1,8 @@
 import axios from "axios";
 
 // const BASIC_URL = "https://shobha-gold-nodejs.onrender.com";
-const BASIC_URL = "http://192.168.29.53:4000";
+// const BASIC_URL = "http://192.168.29.53:4000";
+const BASIC_URL = "https://api-shobha-gold.onrender.com";
 
 
 
